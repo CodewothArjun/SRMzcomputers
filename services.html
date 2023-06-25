@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactPage</title>
+
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footersection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./js/jquery_cdn.js">
+
+    </script> <link rel="stylesheet" href="./css/services.css">
+        
+</head>
+<body>
+<!-- 
+    <header><h1>Our-Products</h1></header> -->
+    
+  <header>
+
+    <h1><a href="./index.html"><span>SRMz</span>computers</a></h1>
+
+
+    <div class="search">
+
+      <input type="text" placeholder="Search" id="search" />
+
+      
+      <button id="btn">
+        <i class="fa fa-search" ></i>
+      </button>
+
+
+
+    </div>
+
+    <nav>
+      <ul id="togle">
+        <li><a href="./index.html">Home</a></li>
+        <li class="touch"><a href="./products.html">Products</a>
+         
+
+        </li>
+        <li><a href="services.html" class="act">Services</a></li>
+        <li><a href="./form.html">Contact</a></li>
+        
+         
+        <a class="loginclas"  > 
+          <button id="butn"  class="logininmywebsite" style="cursor: pointer;">
+          <p>Login</p>
+        </button>
+      
+    </a>
+      
+
+      </ul>
+
+ <!-- loginpage -->
+ <div class="loginbox">
+  
+  <div class="logininformationform" id="shambhabazar">
+    <div class="closing" id="closingbtn" >
+      <i class="fa fa-thin fa-xmark"></i>
+        </div>
+    <div class="loglogo">
+      <h2>Login</h2>
+      <p style="color:white;">Please do login to access our SRMz website advance features</p>
+      <img src="./images/login-concept-illustration_114360-739.webp" alt="">
+    </div>
+    <div class="loginform">
+      <form>
+        <input type="text"require placeholder="Enter Username">
+        <input type="password"require placeholder="Enter password">
+      </form>
+      <p> <a href="#" class="forget">forget password ?</a></p>
+      <p class="ptr">By our policy when login our website then you are our real custommer as willas our business partner</p>
+  <button class="Login log233s" type="submit">Login</button>
+      <p>Dont'have an account? <span id="regpg" style=" cursor: pointer;color: #6a089a;">Register</span>  </a></p>
+    </div>
+  </div>
+
+<!-- resigsterpage -->
+  
+  <div class="logininformationform" id="regsisterpage">
+    <div class="closing" id="closingbtn">
+      <i class="fa fa-thin fa-xmark"></i>
+        </div>
+    <div class="loglogo" >
+      <h2>Register Here</h2>
+      <p style="color:white;">Please do Register  to access our SRMz website advance features</p>
+      <img src="./images/regsistar.jfif" alt="">
+    </div>
+    <div class="loginform">
+      <form>
+        <input type="text"require placeholder="Enter firstName">
+        <input type="text"require placeholder="Enter LastName">
+
+        <input type="password"require placeholder="Enter password">
+        <input type="password"require placeholder="Enter Conform password">
+        <input type="email"require placeholder="Enter E-mail">
+
+
+
+      </form>
+      <p class="ptr">By our policy when you do SignUp you are our custommer</p>
+      <button type="submit" class="Resincls Login">SignUp</button>
+      <p> already do regsistar then do ... <span class="logwnn" style="color: #6a089a; cursor: pointer;">Login</span></p>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".loginbox").hide();
+
+    $("#regsisterpage").css("display","none");
+
+  $(".closing").click(function(){
+$(".loginbox").hide();
+
+
+  });
+  
+  $(".logininmywebsite").click(function(){
+$(".loginbox").show();
+$('#regsisterpage').hide();
+$("#shambhabazar").show();
+
+  });
+
+  $("#regpg").click(function(){
+ $("#shambhabazar").hide();
+    $("#regsisterpage").show();
+
+
+
+  });
+  
+  
+  $(".log233s").click(function(){
+    alert("Login Successfully");
+    $(".loginbox").hide();
+  })
+  
+  $(".Resincls").click(function(){
+    alert("Regsister Successfully");
+    $(".loginbox").hide();
+  })
+
+  
+  $(".logwnn").click(function(){
+    $("#shambhabazar").show();
+    $("#regsisterpage").hide();
+  })
+  
+
+
+
+});
+</script>
+
+     
+    
+
+      <div class="shopcrd">
+        <a href="./adding-card.html">
+        <i class="fa-thin fa-bag-shopping  fa"></i>
+        <div class="disp">5</div>
+
+      </a>
+      </div>
+      <div id="humburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+  </header>
+  <main>
+
+      
+
+    <section class="botmservicesection">
+      <h2>Our Services</h2>
+
+
+      <div class="services">
+
+        <div class="img-info">
+        <div class="serviceimg">
+        <img src="./images/computerreapering.jpg" alt="">
+      </div>
+     <div class="infosecservic">
+       <p class="pop">Computer repair and maintenance</p>
+       <a href="./services.html"> <button id="mdbtn">More details</button> </a>
+<p>Our website offers comprehensive computer repair and maintenance services. Our skilled technicians diagnose and troubleshoot various computer issues, providing effective solutions for hardware, software, and network problems. We prioritize data security and offer virus removal and protection. Additionally, we provide preventive maintenance, optimizing system performance and ensuring up-to-date security. With transparent pricing and clear communication, our customer support is exceptional. Our technicians stay updated with the latest technology trends, guaranteeing efficient and reliable repairs. Choose us for professional and reliable computer repair and maintenance services that prioritize customer satisfaction.</p>
+     </div>
+    </div>
+     
+    <div class="img-info">
+    
+        <div class="serviceimg">
+          <img src="./images/Netwoirkig solution.jfif" alt="">
+   </div>
+        <div class="infosecservic">
+      
+        <p class="pop">Software installation and troubleshooting</p>
+        <a href="./services.html"> <button id="mdbtn">More details</button> </a>
+<p>Our website offers professional software installation and troubleshooting services. Our expert team ensures proper installation and configuration of various software, including operating systems and specialized applications. We provide comprehensive troubleshooting for software-related issues, resolving compatibility problems, conflicts, error messages, and performance concerns. With clear communication, transparent pricing, and exceptional customer support, we minimize downtime and deliver prompt solutions. Our technicians stay updated with the latest software trends, guaranteeing efficient and reliable service. Choose us for a seamless experience, prioritizing customer satisfaction and maximizing your computer's productivity.</p>
+      
+      </div>
+      </div>
+      </div>
+
+
+      
+      <div class="services">
+        <div class="img-info">
+
+        <div class="serviceimg">
+        <img src="./images/Installing-Software-to-Multiple-Computers-Is-an-Easy-Task-Now.jpg" alt="">
+      </div>
+
+      <div class="infosecservic"><p class="pop">Networking solutions</p>
+       <a href="./services.html"> <button id="mdbtn">More details</button> </a>
+ <p>Our website offers reliable networking solutions for homes and businesses. Our services include network setup, configuration, troubleshooting, optimization, security implementation, and expansion. With a focus on exceptional customer support and clear communication, our expert team ensures smooth connectivity and efficient performance. We prioritize data security and employ the latest networking technologies and best practices. Choose us for reliable, tailored networking solutions that meet your specific needs and provide seamless connectivity and enhanced performance.</p>
+      </div> 
+    </div>
+    
+    <div class="img-info">
+
+        <div class="serviceimg">
+          
+        <img src="./images/Data-Recovery.jpg" alt="">
+      </div>
+      <div class="infosecservic">
+        <p class="pop">Data recovery</p>
+       <a href="./services.html"> <button id="mdbtn">More details</button> </a>
+        
+       <p>Our website offers professional data recovery services for various storage devices. Our expert team specializes in retrieving lost or inaccessible data from hard drives, SSDs, USB drives, and memory cards. We employ advanced techniques and tools to recover data from logical errors, accidental deletion, formatting, and hardware failures. With a focus on data integrity and confidentiality, we provide transparent pricing and exceptional customer support. Choose us for efficient and reliable data recovery services, ensuring the retrieval of your valuable data and minimizing the impact of data loss.</p>
+    </div>
+    </div>
+
+
+    </div>
+
+    <script>
+
+     $(document).ready(function(){
+      $("#humburger").click(function(){
+        $("#togle").slideToggle();
+       
+      });
+     });
+
+    </script>
+</main>
+
+
+  <!-- footer-section  -->
+  <!-- <footer> -->
+
+    <div class="footer-container">
+
+      <div class="child ch1">
+        <h2>About-Us</h2>
+        <p>Welcome to My Computer Shop, your one-stop destination for all your computer needs. We offer a wide range of
+          high-quality computer hardware, software, and accessories at competitive prices.</p>
+          <ul>
+            <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+             </ul>
+      </div>
+  
+  
+      <div class="child ch2">
+  
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="./products.html">Product</a></li>
+          <li><a href="./faqsection.html">FAQ</a></li>
+          <li><a href="./form.html">Contact</a></li>
+      </ul>
+  
+      </div>
+  
+  
+      <div class="child ch3">
+  
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="./products.html">Latop</a></li>
+          <li><a href="./products.html">Desktop</a></li>
+          <li><a href="">Wrapers</a></li>
+  
+          <li><a href=""> Hardware</a></li>
+  
+          <li><a href="">Software</a></li>
+        </ul>
+  
+      </div>
+  
+  
+      <div class="child ch4">
+        <h2>Contact</h2>
+  
+        <ul>
+          <li>
+  
+            <i class="fa  fa-location-dot"></i>
+            <p>4600 Bagmati Streat Kathmandu, 4600,Nepal</p>
+          </li>
+  
+          <li><i class="fa fa-solid fa-message"></i>
+            <p> sitaramrokka98@gmail.com</p>
+          </li>
+          <li><i class="fa-solid fa-id-card">
+  
+            </i>
+            <p>1234-4443-4434</p>
+          </li>
+  
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <p>+977 9818268334
+            </p>
+          </li>
+        </ul>
+        <textarea name="ss" id="" cols="30" rows="2">Give your feedback</textarea>
+        <button class="subm">Submit</button>
+      </div>
+  
+      <div class="child ch5">
+        <div class="ftimgcons">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28258.93045514013!2d85.30678921652202!3d27.70597422569935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c62e9494b7%3A0x3fcb1a74527837fe!2sM%20AND%20R%20SOLUTION%20-%20SHOWROOM!5e0!3m2!1sen!2snp!4v1686359815519!5m2!1sen!2snp"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2023 SRMzComputer. All rights reserved.</p>
+
+      </div>
+  
+  
+      <div class="method">
+        <ul>
+          <li><img src="./images/paymentwhat is your ksjad;flkjal;sdf.png" alt=""></li>
+          <!-- <li><img src=" pYpal.png" alt=""></li>
+      <li><img src=" esewa.png" alt=""></li>
+      <li><img src=" visa cards.jfif" alt=""></li> -->
+        </ul>
+      </div>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/script.js"></script>
+</main>
+</body>
+</html>

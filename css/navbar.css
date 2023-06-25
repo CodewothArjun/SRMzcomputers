@@ -1,0 +1,484 @@
+/* font-family - link*/
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;500&display=swap");
+
+/* font-family */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Declearing-variables */
+
+:root {
+  /* Colors */
+
+  --background-color: linear-gradient(rgb(111, 77, 248), rgb(160, 97, 255));
+  --color-text: #fff;
+  --h2-color: rgb(0, 0, 0);
+
+  /* height and width of screen */
+
+  --Width-full: 100%;
+
+  /* fonts-Families */
+
+  --font-family1: "Paytone One", sans-serif;
+  --font-family2: "Poppins", sans-serif;
+  --font-family3: "Roboto", sans-serif;
+}
+
+/* Declearing-variables */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header-section-Starat */
+
+
+header {
+  width: var(--Width-full);
+  min-height:10vh;
+
+  /* background: linear-gradient(rgb(111, 77, 248), rgb(160, 97, 255)); */
+  background: rgb(255, 255, 255);
+  background-size:100%;
+  color: var(--color-text);
+  position: fixed;
+  top: 0px;
+  z-index: 10033330;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  
+  /* overflow: hidden; */
+  box-shadow: 0 0px 5px rgb(161, 156, 156);
+}
+
+
+header h1 span {
+  color: rgb(66, 97, 176);
+  font-size:1.5rem;
+  font-weight: 800;
+}
+
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight:600;
+  font-family: var(--font-family2);
+  position: relative;
+  left: 20px;
+
+  cursor: pointer;
+}
+
+/* Searchbar-section-Start*/
+
+header .search {
+  height: 5vh;
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 20%;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.fa-search {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+
+header .search #search {
+  padding-left: 20px;
+  border-radius: 0px 0 0 0px;
+background-color: rgb(229, 229, 229);
+  font-family: var();
+   height: 5vh;
+  width: 30vw;
+  border: none;
+  outline: none;
+  font-family: var(--font-family2);
+  transition: 0.1s;
+}
+
+header .search #search:hover {
+  background-color: #dbdada;
+}
+header .search #search:focus {
+  border: 3px solid #e9e9e9;
+}
+
+#btn {
+  height: 100%;
+  background: rgba(34, 86, 123, 0.721);
+  color: var(--color-text);
+  border-radius: 0  0px 0px 0;
+  width: 5vw;
+  outline: none;
+  border: 0px solid rgb(255, 250, 250);
+position: relative;
+z-index: 23;
+  font-family: var(--font-family2);
+  cursor: pointer;
+  margin-left: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#btn:active {
+  border: 2px solid rgb(162, 255, 253);
+}
+
+/* Searchbar-section-End*/
+
+/* nav-section-Start */
+nav {
+  height: 5vh;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 80px;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  width: var(--Width-full);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-family2);
+  font-size: 1.1rem;
+  transition: 0.2s;
+  position: relative;
+  color:#000000;
+  font-weight:500;
+}
+nav ul li a::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: rgb(183, 171, 231);
+  transition: .2s;
+  
+}
+
+nav ul li a:hover:after{
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: hsl(252, 100%, 66%);
+}
+
+header nav ul li #sublink {
+
+  height: 0vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+}
+
+header nav ul .touch:hover #sublink {
+  opacity: 1;
+  height: 20vh;
+  display: block;
+}
+/* login-button */
+a{
+  text-decoration: none;
+}
+
+nav ul #butn {
+  background-color: rgb(29, 101, 164);
+  border-radius: 5px;
+  height: 5vh;
+  width: 5vw;
+  font-family: var(--font-family2);
+  font-size: 1.1rem;
+  position: relative;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+nav ul #butn p {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.899);
+  
+  
+}
+nav ul #butn:hover p {
+  color: white;
+}
+
+nav ul #butn::before {
+  content: "";
+  height: 5vh;
+  width: 0vw;
+  background: rgb(15, 111, 214);
+
+  transition: 0.3s;
+  border-radius: 5px;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav ul #butn:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+/* loginpage */
+.loginbox{
+  height:100vh;
+  width: 98.8vw;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 870389470374;
+  background: rgba(0, 0, 0, 0.834);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logininformationform{
+  height: 70vh;
+  width: 50vw;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0 30px rgb(0, 0, 0);
+
+
+}
+.loginform .ptr{
+  width:20vw;
+}
+
+.loglogo{
+  height:100%;
+  width: 60%;
+  background-color: rebeccapurple;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 10px 0 5px gray;
+  font-family: var(--font-family2);
+
+}
+.loglogo p{
+  text-align: justify;
+}
+.forget{
+  text-align: left;
+
+ 
+}
+.closing{
+  position: absolute;
+  right:22.5%;
+  top:55px;
+  font-size: 2rem;
+  transition: .5s;
+  
+}
+.closing:hover{
+  rotate: 360deg;
+}
+.loglogo img{
+  height:50%;
+  width:90%;
+}
+.loginform{
+  height: 100%;
+  width:70%;
+  padding: 20px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.loginform form{
+  
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+gap:30px;
+  height:30vh;
+}
+.loginform  p{
+  color: gray;
+  font-size:.8rem;
+}
+.loginform form input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  text-align:left;
+
+}
+
+.loginbox .loginform  .Login{
+  height: 5vh;
+  width: 15vw;
+font-size: 1rem;
+border: none;
+  text-align: center;
+  background: rgb(90, 90, 251);
+  cursor: pointer;
+  padding: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* end */
+
+.shopcrd{
+
+  font-size: 1.5rem;
+  position: absolute;
+  right: 50px;
+  color: rgb(16, 98, 153);
+  cursor: pointer;
+
+}
+.shopcrd .disp{
+  height: 16px;
+  width: 16px;
+  font-size:.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:orange;
+  border-radius: 50%;
+  position: absolute;
+  color: black;
+  top:-10px;
+  right:-18px;
+  font-family: var(--font-family2);
+  
+}
+#humburger {
+  display: none;
+}
+
+#humburger i{
+  font-size: 1.5rem;
+  position: absolute;
+  top:20px;
+
+
+}
+
+/* nav-section-End */
+
+/* Header-section-End */
+
+main .main-container .card .info h2{
+font-family: var(--font-family3);
+font-size: 2rem;
+}
+
+@media  (max-width:800px){
+  
+  #humburger {
+   display:block;
+    height: 10vh;
+    width: 4vw;
+    position: absolute;
+    top: 0;
+    right:20px;
+    cursor: pointer;
+  }
+
+
+  
+nav ul{
+  flex-direction: column;
+  background:var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  right: 0;
+  box-shadow: -1px 0px 10px black;
+ 
+}
+ nav ul #butn{
+  height:10vh;
+  width: 20vw;
+ }
+header{
+  overflow:visible;
+  justify-content:space-between;
+}
+nav{
+  overflow: visible;
+
+}
+#btn{
+ position: relative;
+}
+nav ul #butn::before {
+  height: 100%;
+}
+
+header .search {
+  left: 300px;
+  display: none;
+}
+
+}

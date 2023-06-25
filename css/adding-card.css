@@ -1,0 +1,208 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;500&display=swap");
+
+
+main{
+    min-height: 100%;
+    width: 100%;
+    margin-bottom:500px;
+}
+
+
+
+
+.addtocardcontainer{
+       
+       
+   height:100%;
+    width:90%;
+    margin:100px auto;
+
+}
+
+.addtocardcontainer .semicontainer{
+    height:45vh;
+    width:60% ;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(191, 191, 191);
+
+}
+
+.addtocardcontainer .semicontainer:hover .cardimages{
+    box-shadow: 2px 2px 10px rgb(216, 211, 211);
+
+
+}
+.addtocardcontainer .headersofcard{
+
+    
+    height: 5vh;
+    width: 60%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.addedcards{
+    height:90%;
+    width:95%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+   
+
+}
+
+.information{
+    height:100%;
+    width:60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+        font-family: sans-serif;
+    padding: 10px;
+    position: relative;
+}
+.cardimages{
+    height:100%;
+    width:40%;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    box-shadow:none;
+
+    align-items: center;
+
+}
+.iconwss{
+    color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    cursor: pointer;
+}
+
+.colr
+{
+    color: red;
+}
+.iconws span{
+    color: rgb(135, 126, 126);
+}
+.cardimages img{
+   max-height:100%;
+    width:90%;
+}
+
+.addtocardcontainer .headersofcard h2{
+    font-family:sans-serif;
+}
+ /* -+ section  */
+.information #sub,#sum,#display{
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(156, 156, 156);
+   padding:0px 5px;
+
+    font-family:Arial, Helvetica, sans-serif;
+   border-radius: 2px;
+   
+}
+#fulcon{
+    position: absolute;
+    right:10px;
+    
+    bottom: 175px;
+    font-size:1rem;
+    height: 5vh;
+    width:12vw;
+    cursor: pointer;
+
+}
+
+.totalcounter{
+    height:60%;
+    width:25%;
+    background: rgb(255, 255, 255);
+    position:absolute;
+    right:100px;
+    top:120px;
+    box-shadow: 0 0 20px silver;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    line-height:50px;
+}
+.totalcounter h3{
+font-family: Roboto; 
+}
+
+.df{
+    height: 5vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.df span{
+    font-family:poppins;
+}
+.chout{
+    height: 5vh;
+    width:10vw;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left:20px;
+    bottom: 70px;
+   
+}
+.chout:active{
+    box-shadow: none;
+}
+.chout a{
+    color: rgb(36, 36, 115);
+}
+
+.chout:hover{
+    box-shadow: 0 0 5px silver;
+
+}
+.tot{
+    border-top: 2px solid black;
+}
+
+.master{
+  
+    color: black;
+    font-size:0.8rem;
+    word-spacing: 5px;
+
+}
+.expire{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: gray;
+    font-size:0.7rem;
+    font-family: poppins;
+    line-height: 20px;
+}
+
+.discount{
+    height: 10vh;
+    width: 15vw;
+    line-height: 30px;
+    position: relative;
+    left:-48px;
+    top:30px;
+    
+    font-family: poppins;
+}

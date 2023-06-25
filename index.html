@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Shop</title>
+  <link rel="shortcut icon" href="./images/10001.jpeg" type="image/x-icon">
+  <script src="./js/jquery_cdn.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footersection.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+
+<body>
+
+  <div class="vgbl">
+    <h1>
+      "Welcome to SRMZ Computers: <br> Where Innovation Meets Exceptional Technology"</h1>
+
+
+  </div>
+  <header>
+
+    <h1><a href="#"><span>SRMz</span>computers</a></h1>
+
+
+    <div class="search">
+
+      <input type="text" placeholder="Search" id="search" />
+
+      
+      <button id="btn">
+        <i class="fa fa-search" ></i>
+      </button>
+
+
+
+    </div>
+
+    <nav>
+      <ul id="togle">
+        <li><a href="index.html" class="act">Home</a></li>
+        <li class="touch"><a href="./products.html">Products</a>
+          
+
+        </li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./form.html">Contact</a></li>
+        
+                 <a class="loginclas"  > 
+          <button id="butn"  class="logininmywebsite" style="cursor: pointer;">
+          <p>Login</p>
+        </button>
+      
+    </a>
+      </ul>
+
+
+ <!-- loginpage -->
+ <div class="loginbox">
+  
+  <div class="logininformationform" id="shambhabazar">
+    <div class="closing" id="closingbtn" >
+      <i class="fa fa-thin fa-xmark"></i>
+        </div>
+    <div class="loglogo">
+      <h2>Login</h2>
+      <p style="color:white;">Please do login to access our SRMz website advance features</p>
+      <img src="./images/login-concept-illustration_114360-739.webp" alt="">
+    </div>
+    <div class="loginform" id="form">
+      <form id="contactForm">
+        <input id="name" type="text" require placeholder="Enter Username">
+        <input type="password"require placeholder="Enter password" id="password">
+        <input type="email" placeholder="Enter E-mail" id="email">
+
+        <p> <a href="#" class="forget">forget password ?</a></p>
+        <p class="ptr">By our policy when login our website then you are our real custommer as willas our business partner</p>
+        <button class="Login log233s" type="submit">Login</button>
+    
+      </form>
+       <p>Dont'have an account? <span id="regpg" style=" cursor: pointer;color: #6a089a;">Register</span>  </a></p>
+    </div>
+
+    
+  </div>
+
+<!-- resigsterpage -->
+  
+  <div class="logininformationform" id="regsisterpage">
+    <div class="closing" id="closingbtn">
+      <i class="fa fa-thin fa-xmark"></i>
+        </div>
+    <div class="loglogo" >
+      <h2>Register Here</h2>
+      <p style="color:white;">Please do Register  to access our SRMz website advance features</p>
+      <img src="./images/regsistar.jfif" alt="">
+
+
+
+
+    </div>
+
+
+
+    <div class="loginform">
+      <form id="contactForm">
+        <input type="text"require placeholder="Enter firstName">
+        <input type="text"require placeholder="Enter LastName">
+
+        <input type="password"require placeholder="Enter password">
+        <input type="password"require placeholder="Enter Conform password">
+        <input type="email"require placeholder="Enter E-mail">
+
+
+
+      </form>
+      <p class="ptr">By our policy when you do SignUp you are our customer</p>
+      <button type="submit" class="Resincls Login">SignUp</button>
+      <p> already do regsistar then do ... <span class="logwnn" style="color: #6a089a; cursor: pointer;">Login</span></p>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".loginbox").hide();
+
+    $("#regsisterpage").css("display","none");
+
+  $(".closing").click(function(){
+$(".loginbox").hide();
+
+
+  });
+  
+  $(".logininmywebsite").click(function(){
+$(".loginbox").show();
+$('#regsisterpage').hide();
+$("#shambhabazar").show();
+
+  });
+
+  $("#regpg").click(function(){
+ $("#shambhabazar").hide();
+    $("#regsisterpage").show();
+
+
+
+  });
+  
+  
+  $(".log233s").click(function(){
+    $(".loginbox").hide();
+    alert("login Successfully")
+  })
+  
+  $(".Resincls").click(function(){
+    alert("Regsister Successfully");
+    $(".loginbox").hide();
+  })
+
+  
+  $(".logwnn").click(function(){
+    $("#shambhabazar").show();
+    $("#regsisterpage").hide();
+  })
+  
+
+
+
+});
+</script>
+      <div class="shopcrd">
+        <a href="./adding-card.html">
+        <i class="fa-thin fa-bag-shopping  fa"></i>
+        <div class="disp">5</div>
+      </a>
+      </div>
+      <div id="humburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+  </header>
+  <main>
+
+
+    <!-- slidersection -->
+
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+
+        <img src="./images/larg1.png">
+       
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="./images/larg2.png">
+       
+      </div>
+
+      <div class="mySlides fade">
+
+        <img src="./images/large3.png">
+       
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+<script>
+  
+
+   // firstpg slider function 
+   
+   let slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     let dots = document.getElementsByClassName("dot");
+     if (n > slides.length) { slideIndex = 1 }
+     if (n < 1) { slideIndex = slides.length }
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex - 1].style.display = "block";
+     dots[slideIndex - 1].className += " active";
+   }
+</script>
+    <!-- slidersection -->
+    <section class="about-section">
+      <div class=" text22">Trending Products</div>
+
+      <!-- cardssection -->
+
+       
+<div class="varticalimg">
+  <div class="mainvartiimg">
+  <div class="varcard4" id="varticcardtop">
+    <img src="./images/computerimgag.webp" alt="">
+      <h3>Dell Vostro 7620</h3>
+    <div class="starsforver">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa fa-thin fa-star" style="color: rgb(221, 217, 217); "></i>
+    </div>
+    <p>This in nice laptop which have many function</p>
+    
+   <span> <del>$5030</del>
+    <span class="prc">$4090</span></span>
+  </div>
+
+    <button class="atocardbtn" id="additionbutton">
+      Add to card <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </button>
+
+</div>
+
+
+<div class="mainvartiimg">
+  <div class="varcard4" id="varticcardtop">
+    <img src="./images/computerimgag.webp" alt="">
+      <h3>Asus ZenBook 13 </h3>
+    <div class="starsforver">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa fa-thin fa-star" style="color: rgb(221, 217, 217);"></i>
+    </div>
+    <p>This in nice laptop which have many function</p>
+    
+   <span> <del>$4130</del>
+    <span class="prc">$3290</span></span>
+  </div>
+
+    <button class="atocardbtn" id="additionbutton">
+      Add to card <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </button>
+
+</div>
+
+
+<div class="mainvartiimg">
+  <div class="varcard4" id="varticcardtop">
+    <img src="./images/new laptop computer.jpg" alt="">
+      <h3>HP Envy 14-eb00na </h3>
+    <div class="starsforver">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa fa-thin fa-star" style=" color: rgb(221, 217, 217);"></i>
+    </div>
+    <p>This in nice laptop which have many function</p>
+    
+   <span> <del>$5030</del>
+    <span class="prc">$4090</span></span>
+  </div>
+
+    <button class="atocardbtn" id="additionbutton">
+      Add to card <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </button>
+
+</div>
+
+
+<div class="mainvartiimg">
+  <div class="varcard4" id="varticcardtop">
+    <img src="./images/new laptop computer.jpg" alt="">
+      <h3>Dell Inspiron 15 300</h3>
+    <div class="starsforver">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa fa-thin fa-star" style="color: rgb(221, 217, 217);"></i>
+    </div>
+    <p>This in nice laptop which have many function</p>
+    
+   <span> <del>$6090</del>
+    <span class="prc">$5660</span></span>
+  </div>
+
+    <button class="atocardbtn" id="additionbutton">
+      Add to card <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </button>
+
+</div>
+</div>
+<!-- endsection -->
+
+      <div class="trendingp">
+        <div class="prodoftrading">
+          <h4>HP Litmon</h4>
+          <img src="./images/10009.jpeg" alt="">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+          <p class="rates">$4328</p>             
+           <button class="bwmp">Shop Now</button>
+        </div>
+                          <div class="prodoftrading">
+          <h4>LaptopsTred</h4>
+          <img src="./images/10001.jpeg" alt="">
+          <div class="stars">
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+        </div>
+        <p class="rates">$8028</p>
+           
+          <button class="bwmp">Shop Now</button>
+        </div>
+                          <div class="prodoftrading">
+          <h4>LaptopsTred</h4>
+          <img src="./images/10003.jpeg" alt="">
+          <div class="stars">
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+            <i class="fa-solid fa-star"> </i>
+        </div>
+                   <p class="rates">$5028</p>            
+           <button class="bwmp">Shop Now</button>
+        </div>
+                          <div class="prodoftrading">
+          <h4>LaptopsTred</h4>
+          <img src="./images/10006.jpeg" alt="">
+           <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+                   <p class="rates">$9028</p>            
+           <button class="bwmp">Shop Now</button>
+          </div>
+
+          <!-- nextslid -->
+          <div class="prodoftrading">
+
+          <img src="./images/10007.jpg" alt="">
+           <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+          <p class="rates">$4328</p>             
+  <button class="bwmp">Shop Now</button>
+</div>
+                 <div class="prodoftrading">
+ <h4>LaptopsTred</h4>
+ <img src="./images/10005.jpeg" alt="">
+  <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+<p class="rates">$8028</p>
+  
+ <button class="bwmp">Shop Now</button>
+</div>
+                 <div class="prodoftrading">
+ <h4>LaptopsTred</h4>
+ <img src="./images/10004.jpeg" alt="">
+  <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+          <p class="rates">$5028</p>            
+  <button class="bwmp">Shop Now</button>
+</div>
+                 <div class="prodoftrading">
+ <h4>LaptopsTred</h4>
+ <img src="./images/10006.jpeg" alt="">
+  <div class="stars">
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                    <i class="fa-solid fa-star"> </i>
+                </div>
+          <p class="rates">$9028</p>            
+  <button class="bwmp">Shop Now</button>
+ </div>
+                      </div>
+
+      <div class="container" id="About">
+
+
+        <article>
+
+          <h2 style="font-size: 2.5rem;"> "Empower Your Digital Journey with SRMz Computers: Where Innovation Fuels Excellence."
+
+          </h2>
+          <div class="videocon">
+            <div class="vdm">
+              <video muted loop id="autoplay">
+                <source src="./images/digital journey.mp4" type="video/mp4">
+               
+              </video>
+              <p id="textofvideo">
+                At SRMZ Computers, we are passionate about delivering cutting-edge technology solutions to enhance your
+                digital experience. Discover a world of limitless possibilities as we offer a wide range of premium
+                computers and high-quality components to cater to all your computing needs. With a commitment to
+                excellence,
+                we strive to provide you with unparalleled products and services.
+              </p>
+            </div>
+
+           
+          </div>
+<script>
+  
+
+window.onload = function () {
+  document.getElementById("autoplay").play();
+}
+</script>
+
+
+
+          <div class="imgcon">
+          <h3 style="position:relative; left: -200px; top:20px;   margin:200px 0 30px 0;  width: 70vw; text-align: center;">Unleash the Power of Performance:</h3>
+
+            <div class="imgsection">
+
+              <img src="./images/Graphics card Rtx 10900.jpg" alt="Graphic Card">
+              
+              <img src="./images/RGB gaming PC 6'1 tall.jpg" alt="motherboard">
+       
+              <img src="./images/A beautiful 3D image of an anthropomorphic compute.jpg" alt="key">
+            </div>
+
+            <p>Experience the pinnacle of performance with our exceptional selection of computers. From lightning-fast
+              processors to top-of-the-line graphics cards, we bring you the latest innovations that will elevate your
+              productivity, gaming, and multimedia capabilities to new heights.</p>
+
+            
+          </div>
+
+          <div class="SmallHeaders-sections" id="SmallHeader1">
+            <!-- <img src="./images/design.jpg" alt="Design"> -->
+            <img src="./images/customization.jpg" alt="">
+<div class="flexcolcontan">
+          <h3 >Customization Tailored to You:</h3>
+
+            <p>Personalize your computing experience with our easy customization options. Create a computer that
+              perfectly
+              aligns with your unique requirements and preferences. Choose from an extensive range of components,
+              designs,
+              and configurations to build a system that is as exceptional as you are.
+            </p>
+          </div>
+          </div>
+
+          <div class="SmallHeaders-sections" id="SmallHeader2">
+            <img src="./images/team.jpg" alt="Expert team">
+<div class="flexcolcontan">
+
+          <h3 id="h3ofabout135">Expert Advice and Support:</h3>
+
+            <p>Our dedicated team of tech experts is ready to provide you with personalized advice and assistance.
+              Whether
+              you need guidance on selecting the ideal components or require technical support, we are here to ensure
+              that
+              you have a seamless and enjoyable experience throughout your computing journey.
+            </p>
+            </div>
+          </div>
+
+          
+          
+          <div class="SmallHeaders-sections" id="SmallHeader3">
+            
+            <!-- <img src="./images/stydy.jpg" alt="Uptodate in a technology"> -->
+            <img src="./images/stydy.jpg" alt="">
+<div class="flexcolcontan">
+
+            <h3>Stay Ahead with Tech Insights:</h3>
+            <p>
+
+
+              Stay informed and inspired with our blog and resource section. Gain valuable insights into the latest
+              technology trends, product reviews, and helpful tips to optimize your computing setup. Empower yourself
+              with
+              knowledge and stay one step ahead in the fast-paced world of technology.</p>
+        </div>
+            </div>
+
+
+
+          <div class="SmallHeaders-sections" id="SmallHeader4">
+            <img src="./images/quality.webp" alt="Quality product">
+<div class="flexcolcontan">
+
+          <h3 id="h3ofabout135">Uncompromising Quality and Reliability:</h3>
+
+            <p>We believe in offering only the highest quality products. Each item in our catalog undergoes rigorous
+              testing and comes from trusted manufacturers, ensuring exceptional performance, reliability, and
+              longevity.
+              Invest in technology that will stand the test of time.</p>
+          </div>
+          </div>
+
+          <div class="SmallHeaders-sections" id="SmallHeader5">
+            <img src="./images/user-friendly.png" alt="User friendly computer">
+<div class="flexcolcontan">
+           
+            <h3>Seamless Shopping Experience:</h3>
+          
+            <p>
+              At SRMZ Computers, we are dedicated to providing you with the ultimate computing experience. Embrace the
+              power, precision, and possibilities that our products unlock. Join us in the pursuit of technological
+              excellence and explore the extraordinary world of SRMZ Computers. Shop now and embark on a journey to
+              redefine what's possible in the realm of computing.
+
+
+
+            </p>
+</div>   
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="featuredHeader">Featured Products</h2>
+
+
+      <div class="product">
+        <div class="productimg">
+
+        <img src="./images/10001.jpeg" alt="Product 1">
+      </div>
+        <div class="information">
+          <h3>Dell Inspiron 15 5502 </h3>
+          <p>The Dell Inspiron 15 5502 is a 15.6-inch laptop powered by an Intel Core i7 processor, offering good
+            performance and a sleek design. It features a Full HD display, up to 16GB of RAM, and various connectivity
+            options.
+
+          </p>
+          <button  class="butonmore butonmore1"> <span >Read More</span></button>
+
+
+        <ul id="specification1"> 
+
+          <li>Display Size_13.3 Inch</li>
+          <li>Generation   	_11th Gen </li> 
+          <li>Graphics_	Intel Iris Xe</li>
+          <li>Maximum Display Resolution_
+            	1920 x 1200</li>
+          <li>Operation System	_Win 10</li>
+          <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+        
+          <li>Processor_	i5-11300H</li>
+          <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+          <li>Ram_	8GB</li>
+          <li>Storage	_512GB SSD</li>
+          <li>Free Accessories_	N/a</li>
+          <li>Touch Screen	_No</li>
+          
+        
+
+</ul>   
+
+<script>
+  
+  // togglefunction?
+
+$(document).ready(function(){
+$("#specification1").slideUp();
+
+$(".butonmore1").click(function(){
+$("#specification1").slideToggle();
+
+});
+
+});
+
+
+
+</script>
+
+
+        </div>
+      </div>
+
+      
+
+      <div class="product">
+        <div class="productimg">
+
+        <img src="./images/10002.jpeg" alt="Product 2">
+       </div>
+        <div class="information">
+          <h3>Dell Inspiron 13 (5310)</h3>
+          <p>The Dell Inspiron 13 (5310) is a 13-inch laptop that provides a compact and portable design. It is equipped
+            with an Intel Core processor, has a Full HD display, and offers ample storage options for your needs.</p>
+          <button  class="butonmore butonmore2"> <span >Read More</span></button>
+
+
+        <ul id="specification"> 
+
+          <li>Display Size_13.3 Inch</li>
+          <li>Generation   	_11th Gen </li> 
+          <li>Graphics_	Intel Iris Xe</li>
+          <li>Maximum Display Resolution_
+            	1920 x 1200</li>
+          <li>Operation System	_Win 10</li>
+          <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+        
+          <li>Processor_	i5-11300H</li>
+          <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+          <li>Ram_	8GB</li>
+          <li>Storage	_512GB SSD</li>
+          <li>Free Accessories_	N/a</li>
+          <li>Touch Screen	_No</li>
+          
+        
+
+</ul>   
+          
+<script>
+  
+  // togglefunction?
+
+$(document).ready(function(){
+$("#specification").slideUp();
+
+$(".butonmore2").click(function(){
+$("#specification").slideToggle();
+
+});
+
+});
+
+
+
+</script>
+
+
+        </div>
+      </div>
+
+      
+      <div class="product">
+        <div class="productimg">
+
+        <img src="./images/10004.jpeg" alt="Product 3">
+    </div>
+        <div class="information">
+          <h3>Dell Inspiron 7306</h3>
+          <p>
+            The Dell Inspiron 7306 is a 2-in-1 convertible laptop with a 13-inch touchscreen display, allowing for
+            versatile usage as a laptop or tablet. It features an Intel Core processor, ample storage capacity, and a
+            sleek design for on-the-go productivity.</p>
+            <button  class="butonmore butonmore3"> <span >Read More</span></button>
+
+
+            <ul id="specification3"> 
+    
+              <li>Display Size_13.3 Inch</li>
+              <li>Generation   	_11th Gen </li> 
+              <li>Graphics_	Intel Iris Xe</li>
+              <li>Maximum Display Resolution_
+                  1920 x 1200</li>
+              <li>Operation System	_Win 10</li>
+              <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+            
+              <li>Processor_	i5-11300H</li>
+              <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+              <li>Ram_	8GB</li>
+              <li>Storage	_512GB SSD</li>
+              <li>Free Accessories_	N/a</li>
+             
+    
+    </ul>   
+              
+    <script>
+      
+      // togglefunction?
+    
+    $(document).ready(function(){
+    $("#specification3").slideUp();
+    
+    $(".butonmore3").click(function(){
+    $("#specification3").slideToggle();
+    
+    });
+    
+    });
+    
+    
+    
+    </script>
+    
+        </div>
+        </div>
+        
+        <div class="product">
+          <div class="productimg">
+
+          <img src="./images/10030.jpg" alt="Product 4">
+       </div>
+          <div class="information">
+            <h3>HP ProBook 455 G8 15.6" Notebook</h3>
+            <p>
+              The HP ProBook 455 G8 is a 15.6-inch notebook powered by an AMD Ryzen 5 5600U Hexa-core processor,
+              delivering
+              powerful performance for multitasking and productivity. It features a spacious display, making it ideal
+              for
+              work or entertainment, and offers a reliable and durable design suitable for business use.</p>
+
+              <button  class="butonmore butonmore4"> <span >Read More</span></button>
+
+
+              <ul id="specification4"> 
+      
+                <li>Display Size_13.3 Inch</li>
+                <li>Generation   	_11th Gen </li> 
+                <li>Graphics_	Intel Iris Xe</li>
+                <li>Maximum Display Resolution_
+                    1920 x 1200</li>
+                <li>Operation System	_Win 10</li>
+                <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+              
+                <li>Processor_	i5-11300H</li>
+                <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+                <li>Ram_	8GB</li>
+               
+      
+      </ul>   
+                
+      <script>
+        
+        // togglefunction?
+      
+      $(document).ready(function(){
+      $("#specification4").slideUp();
+      
+      $(".butonmore4").click(function(){
+      $("#specification4").slideToggle();
+      
+      });
+      
+      });
+      
+      
+      
+      </script>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="product">
+          <div class="productimg">
+          <img src="./images/10041.jpg" alt="Product 5">
+        </div>
+          <div class="information">
+            <h3>Asus Zenbook UX21</h3>
+            <p>
+              The Asus Zenbook UX21 is a compact and lightweight laptop featuring an Intel Core i5 processor. It offers
+              a
+              sleek design, a high-quality display, and powerful performance for everyday tasks and productivity.</p>
+          
+              <button  class="butonmore butonmore5"> <span >Read More</span></button>
+
+
+              <ul id="specification5"> 
+      
+                <li>Display Size_13.3 Inch</li>
+                <li>Generation   	_11th Gen </li> 
+                <li>Graphics_	Intel Iris Xe</li>
+                <li>Maximum Display Resolution_
+                    1920 x 1200</li>
+                <li>Operation System	_Win 10</li>
+                <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+              
+                <li>Processor_	i5-11300H</li>
+                <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+                <li>Ram_	8GB</li>
+                <li>Battery	_4-Cell Battery, 54WHr (Integrated)</li>
+                <li>Color_splgold</li>
+                
+               
+      
+      </ul>   
+                
+      <script>
+        
+        // togglefunction?
+      
+      $(document).ready(function(){
+      $("#specification5").slideUp();
+      
+      $(".butonmore5").click(function(){
+      $("#specification5").slideToggle();
+      
+      });
+
+      
+$("#scardssectionmanagor").css("display", "none")
+$(".card,.hidesec,.hcards,.productimg,.prodoftrading,#varticcardtop").click(function () {
+  $("#scardssectionmanagor").toggle();
+
+})
+
+
+      
+      });
+      
+      
+      
+      </script>
+      
+    <!-- togel cards informations -->
+    <div class="cardinformation" id="scardssectionmanagor" >
+      <div class="images">
+        <img src="https://d2ocdqfo0e576d.cloudfront.net/assets/Inspiron%207000%202%20in%201%20-1280x1280.jpeg"
+          alt="1stimage">
+        <div class="img3">
+          <img src="https://d2ocdqfo0e576d.cloudfront.net/assets/Inspiron%207000%202%20in%201%20-1280x1280.jpeg"
+            alt="1stimage">
+          <img src="https://d2ocdqfo0e576d.cloudfront.net/assets/Inspiron%207000%202%20in%201%20-1280x1280.jpeg"
+            alt="1stimage">
+          <img src="https://d2ocdqfo0e576d.cloudfront.net/assets/Inspiron%207000%202%20in%201%20-1280x1280.jpeg"
+            alt="1stimage">
+
+        </div>
+      </div>
+      <div class="information">
+        <h2>
+          Inspiron 7000 Series
+        </h2>
+        <h3><del>$10455</del> &nbsp; <b>$10002</b></h3>
+        <span>STOCK:AVAILABLE</span>
+
+        <ul id="specification1"> 
+
+          <li>Display Size_13.3 Inch</li>
+          <li>Generation   	_11th Gen </li> 
+          <li>Graphics_	Intel Iris Xe</li>
+          <li>Maximum Display Resolution_
+            	1920 x 1200</li>
+          <li>Operation System	_Win 10</li>
+          <li>1 USB 3.2 Gen 1 port, 1 Thunderbolt 4</li>
+        
+          <li>Processor_	i5-11300H</li>
+          <li>Processor Speed	_8MB Cache, up to 4.5GHz</li>
+          <li>Ram_	8GB</li>
+          <li>Storage	_512GB SSD</li>
+          <li>Free Accessories_	N/a</li>
+          <li>Touch Screen	_No</li>
+          
+        
+
+</ul>   
+
+        <p id="fulcon"><span>Quantity:</span>
+          <span id="sub" onclick="quantitysub()">-</span>
+          <span id="display">1</span>
+          <span id="sum" onclick="quantityadd()">+</span>
+        </p>
+
+        <button id="cardadd">Add To Card</button>
+        <span class="hidesec">
+          <i class="fa-solid fa-square-xmark"></i>
+        </span>
+
+        <script>
+            let sm=2;
+          $("#cardadd,#additionbutton").click(function(){
+     
+            if(sm==2){
+            $(".loginbox").show();
+        
+           let value= $(".disp").text();
+           let sum=Number(value)+1;
+           $(".disp").text(sum);
+            }
+
+
+            else{
+              let value= $(".disp").text();
+           let sum=Number(value)+1;
+           $(".disp").text(sum);
+            }
+            sm=0;
+
+        
+          })
+
+        </script>
+
+      </div>
+    </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Add more product divs as needed -->
+    </section>
+  
+
+    <section class="botmservicesection">
+      <h2>Our Services</h2>
+
+
+      <div class="services">
+
+        <div class="img-info">
+        <div class="serviceimg">
+        <img src="./images/computerreapering.jpg" alt="">
+       
+      </div>
+     <div class="infosecservic">
+       <p>Computer repair and maintenance</p>
+       <a href="services.html"> <button id="mdbtn">More details</button> </a>
+
+     </div>
+    </div>
+     
+    <div class="img-info">
+    
+        <div class="serviceimg">
+          <img src="./images/Installing-Software-to-Multiple-Computers-Is-an-Easy-Task-Now.jpg" alt="">
+   </div>
+        <div class="infosecservic">
+      
+        <p>Software installation and troubleshooting</p>
+        <a href="services.html"> <button id="mdbtn">More details</button> </a>
+
+      
+      </div>
+      </div>
+      </div>
+
+
+      
+      <div class="services">
+        <div class="img-info">
+
+        <div class="serviceimg">
+        <img src="./images/Netwoirkig solution.jfif" alt="">
+      </div>
+
+      <div class="infosecservic"><p>Networking solutions</p>
+       <a href="./html/services.html"> <button id="mdbtn">More details</button> </a>
+ 
+      </div> 
+    </div>
+    
+    <div class="img-info">
+
+        <div class="serviceimg">
+          
+        <img src="./images/Data-Recovery.jpg" alt="">
+      </div>
+      <div class="infosecservic">
+        <p>Data recovery</p>
+        <a href="services.html"> <button id="mdbtn">More details</button> </a>
+
+
+    </div>
+      </div>
+      </div>
+
+      
+<div class="testominial">
+  <h2 class="tet">Testimonial</h2>
+
+  <div class="testcontainer">
+
+
+
+    <div class="person">
+      <i class="fa-solid fa-quote-left "></i>
+      <div class="cloumnofprr">
+      <img src="./images/person1.jfif" alt="">
+      <div class="infoofclints">
+      <h3>Poule Tamraker</h3>
+      <p>I am delighted to share my experience with SRMZComputer and express my utmost satisfaction with their services. From the moment I engaged with their team, I was impressed by their professionalism, expertise, and commitment to customer satisfaction.</p>
+    </div>
+  </div>
+    <div class="linksofperson">
+      
+      <ul>
+        <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+        <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+         </ul>
+    </div>
+
+
+  
+    </div>
+
+    <div class="person">
+      <i class="fa-solid fa-quote-left "></i>
+
+      <div class="cloumnofprr">
+      <img class="amg" src="./images/person2.jpg" alt="">
+      <div class="infoofclints">
+        <h3> Saroj Xetri</h3>
+      <p>I highly recommend SRMZ Computer to anyone in need of a reliable and high-performance computer solution. Their professionalism, expertise, and dedication to customer satisfaction make them stand out in the industry. I'm extremely satisfied with SRMzComputer.</p>
+    </div>
+  </div>
+  <div class="linksofperson">
+      
+    <ul>
+      <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+      <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+       </ul>
+    </div>
+    </div>
+
+
+    <div class="person">
+      <i class="fa-solid fa-quote-left "></i>
+
+      <div class="cloumnofprr">
+      <img src="./images/person3.jfif" alt="">
+      <div class="infoofclints">
+        <h3>Sabina Tamang</h3>
+    <p>
+      I had a fantastic experience with SRMZ Computer! From start to finish, their team provided exceptional service and expertise. As a graphic degsiner, I rely heavily on reliable and high-performance computers for my work, and SRMZ Computer exceeded my expectations.
+    </p>
+    </div>
+   
+  </div>
+
+  <div class="linksofperson">
+      
+    <ul>
+      <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+      <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+       </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- sec2 -->
+
+
+
+
+<div class="testcontainer">
+
+
+
+  <div class="person">
+    <i class="fa-solid fa-quote-left "></i>
+    <div class="cloumnofprr">
+    <img src="./images/person5.jfif" alt="">
+    <div class="infoofclints">
+    <h3>Markus Ahudie</h3>
+    <p>I am delighted to share my experience with SRMZComputer and express my utmost satisfaction with their services. From the moment I engaged with their team, I was impressed by their professionalism, expertise, and commitment to customer satisfaction.</p>
+  </div>
+</div>
+  <div class="linksofperson">
+    
+    <ul>
+      <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+      <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+       </ul>
+  </div>
+
+
+
+  </div>
+
+  <div class="person">
+    <i class="fa-solid fa-quote-left "></i>
+
+    <div class="cloumnofprr">
+    <img class="amg" src="./images/person6.jfif" alt="">
+    <div class="infoofclints">
+      <h3> simon Dhital</h3>
+    <p>I highly recommend SRMZ Computer to anyone in need of a reliable and high-performance computer solution. Their professionalism, expertise, and dedication to customer satisfaction make them stand out in the industry. I'm extremely satisfied with SRMzComputer.</p>
+  </div>
+</div>
+<div class="linksofperson">
+    
+  <ul>
+    <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+    <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+    <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+     </ul>
+  </div>
+  </div>
+
+
+  <div class="person">
+    <i class="fa-solid fa-quote-left "></i>
+
+    <div class="cloumnofprr">
+    <img src="./images/person4n.jpg" alt="">
+    <div class="infoofclints">
+      <h3>Sarina Sirmal</h3>
+  <p>
+    I had a fantastic experience with SRMZ Computer! From start to finish, their team provided exceptional service and expertise. As a graphic degsiner, I rely heavily on reliable and high-performance computers for my work, and SRMZ Computer exceeded my expectations.
+  </p>
+  </div>
+ 
+</div>
+
+<div class="linksofperson">
+    
+  <ul>
+    <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+    <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+    <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+     </ul>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+      
+      
+
+
+
+    </section>
+  </main>
+
+  <!-- footer-section  -->
+  <!-- <footer> -->
+
+  <div class="footer-container">
+
+    <div class="child ch1">
+      <h2>About-Us</h2>
+      <p>Welcome to My Computer Shop, your one-stop destination for all your computer needs. We offer a wide range of
+        high-quality computer hardware, software, and accessories at competitive prices.</p>
+      <ul>
+     <li><a class="ftiy" href="https://www.facebook.com/sitaram.rokkha"><i class="fa-brands fa-facebook-f"></i></a></li>
+     <li><a class="ftiy" href="https://github.com/sitaram-bhai"><i class="fa-brands fa-square-github"></i></a></li>
+     <li><a class="ftiy" href="https://www.instagram.com/srmzcomputers/"><i class="fa-brands fa-instagram"></i></a></li>
+     <li><a class="ftiy" href="https://www.youtube.com/channel/UC24ei-Ih61-yVZxygstli-Q"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+
+    <div class="child ch2">
+
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./products.html">Product</a></li>
+        <li><a href="./faqsection.html">FAQ</a></li>
+        <li><a href="./form.html">Contact</a></li>
+    </ul>
+    </div>
+
+
+    <div class="child ch3">
+
+      <h2>Shop</h2>
+      <ul>
+        <li><a href="./products.html">Latop</a></li>
+        <li><a href="">Desktop</a></li>
+        <li><a href="">Computers</a></li>
+
+        <li><a href=""> Hardware</a></li>
+
+        <li><a href="">Software</a></li>
+      </ul>
+
+    </div>
+
+
+    <div class="child ch4">
+      <h2>Contact</h2>
+
+      <ul>
+        <li>
+
+          <i class="fa  fa-location-dot"></i>
+     <p>4600 Bagmati Streat Kathmandu, 4600,Nepal</p>
+        </li>
+
+        <li><i class="fa fa-solid fa-message"></i>
+          <p> sitaramrokka98@gmail.com</p>
+        </li>
+        <li><i class="fa-solid fa-id-card">
+
+          </i>
+          <p>1234-4443-4434</p>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <p>+977 9818268334
+          </p>
+        </li>
+      </ul>
+      <textarea name="ss" id="" cols="30" rows="2">Give your feedback</textarea>
+      <button class="subm">Submit</button>
+    </div>
+
+    <div class="child ch5">
+      <div class="ftimgcons">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28258.93045514013!2d85.30678921652202!3d27.70597422569935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c62e9494b7%3A0x3fcb1a74527837fe!2sM%20AND%20R%20SOLUTION%20-%20SHOWROOM!5e0!3m2!1sen!2snp!4v1686359815519!5m2!1sen!2snp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 SRMzComputer. All rights reserved.</p>
+    </div>
+
+
+    <div class="method">
+      <ul>
+        <li><img src="./images/paymentwhat is your ksjad;flkjal;sdf.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+  
+    <!-- scripting section -->
+    <script src="./js/quantity.js"></script>
+    <script src="./js/script.js"></script>
+  
+    <!-- End of script -->
+
+</body>
+
+</html>
